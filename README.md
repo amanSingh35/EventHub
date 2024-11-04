@@ -1,3 +1,4 @@
+
 # EventHub - Event Management System
 
 Introducing our Event Management System, a solution developed as part of our final year group project, designed to streamline campus event planning, registration, and ticket booking. I played a key role as the architect, creating the user interface where I incorporated modern design principles and prioritized user experience. We are developing the system using the MERN stack (MongoDB, Express.js, React.js, Node.js), and we are utilizing the agile Scrum methodology for efficient development.
@@ -43,6 +44,9 @@ Introducing our Event Management System, a solution developed as part of our fin
 
 **The application should now be running. You can access it at http://localhost:5173**<br>
 **The Server is running on http://localhost:4000**
+![Screenshot (149)](https://github.com/user-attachments/assets/dc92511d-d444-4b6e-ae13-17b0c01e5305)
+![Screenshot (147)](https://github.com/user-attachments/assets/b8de710c-201b-407d-ac3d-0b437f3a3377)
+![Screenshot (146)](https://github.com/user-attachments/assets/a61908cb-7d10-4583-aac1-fcfb44ed3de3)
 
 <h1>Thank You</h1>
 
