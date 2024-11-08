@@ -24,9 +24,14 @@ app.use(cookieParser());
 //       origin: process.env.CLIENT_URL, 
 //    })
 // );
+const cors = require('cors');
+
 app.use(cors({
-   origin: '*',  // Allows requests from any origin
- }));
+  origin: 'http://localhost:5173',  // Use your frontend's exact origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true, // Enable this if you're using cookies or need credentials
+}));
+
  
 
 // mongoose.connect(process.env.MONGO_URL);
