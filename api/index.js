@@ -24,7 +24,7 @@ app.use(cookieParser());
 //       origin: process.env.CLIENT_URL, 
 //    })
 // );
-const cors = require('cors');
+// const cors = require('cors');
 
 app.use(cors({
   origin: 'http://localhost:5173',  // Use your frontend's exact origin
