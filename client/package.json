@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": "16.x"
-  },
+  "node": "18.x"
+},
   "scripts": {
     "dev": "vite",
     "build": "echo 'Installed modules:' && npm list --depth=2 && vite build",
