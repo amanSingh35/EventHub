@@ -18,12 +18,13 @@ const jwtSecret = process.env.JWT_SECRET;
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-   cors({
-      credentials: true,
-      origin: process.env.CLIENT_URL, 
-   })
-);
+// app.use(
+//    cors({
+//       credentials: true,
+//       origin: process.env.CLIENT_URL, 
+//    })
+// );
+app.use(cors());
 
 // mongoose.connect(process.env.MONGO_URL);
 
