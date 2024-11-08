@@ -8,6 +8,7 @@
 },
   "scripts": {
     "dev": "vite",
+    "postinstall": "chmod +x node_modules/.bin/*",
     "build": "echo 'Installed modules:' && npm list --depth=2 && vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
