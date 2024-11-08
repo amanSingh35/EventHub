@@ -14,7 +14,7 @@ const Ticket = require("./models/Ticket");
 const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
-const jwtSecret = "bsbsfbrnsftentwnnwnwn";
+const jwtSecret = process.env.JWT_SECRET||"bsbsfbrnsftentwnnwnwn";
 
 app.use(express.json());
 app.use(cookieParser());
@@ -253,7 +253,7 @@ app.delete("/tickets/:id", async (req, res) => {
    }
 });
 
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-   console.log(`Server is running on port ${PORT}`);
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+   console.log(`Server is running on port ${port}`);
 });
