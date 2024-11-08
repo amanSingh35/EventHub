@@ -7,12 +7,11 @@
   "node": "18.x"
 },
   "scripts": {
-    "dev": "vite",
-    "postinstall": "chmod +x node_modules/.bin/*",
-    "build": "echo 'Installed modules:' && npm list --depth=2 && vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
+  "postinstall": "npm install vite && chmod +x node_modules/.bin/*",
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
   "dependencies": {
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
