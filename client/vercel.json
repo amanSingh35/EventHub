@@ -8,9 +8,5 @@
         "distDir": "dist"
       }
     }
-  ],
-  "scripts": {
-    "postinstall": "npm install vite && chmod +x node_modules/.bin/*",
-    "build": "vite build"
-  }
+  ]
 }
