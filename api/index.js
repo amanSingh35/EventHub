@@ -14,18 +14,32 @@ const Ticket = require("./models/Ticket");
 const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
-const jwtSecret = process.env.JWT_SECRET||"bsbsfbrnsftentwnnwnwn";
+const jwtSecret = process.env.JWT_SECRET;
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(
    cors({
       credentials: true,
-      origin: process.env.CLIENT_URL||"http://localhost:5173", 
+      origin: process.env.CLIENT_URL, 
    })
 );
 
-mongoose.connect(process.env.MONGO_URL);
+// mongoose.connect(process.env.MONGO_URL);
+
+// const mongoose = require('mongoose');
+// console.log('Mongo URI:', process.env.MONGO_URI);
+
+const uri = process.env.MONGO_URI; // Ensure MONGO_URI is correct in your environment variables
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((error) => {
+    console.error("Error connecting to MongoDB:", error);
+  });
+
 
 const storage = multer.diskStorage({
    destination: (req, file, cb) => {
@@ -253,7 +267,7 @@ app.delete("/tickets/:id", async (req, res) => {
    }
 });
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 app.listen(port, () => {
    console.log(`Server is running on port ${port}`);
 });
