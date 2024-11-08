@@ -24,7 +24,10 @@ app.use(cookieParser());
 //       origin: process.env.CLIENT_URL, 
 //    })
 // );
-app.use(cors());
+app.use(cors({
+   origin: '*',  // Allows requests from any origin
+ }));
+ 
 
 // mongoose.connect(process.env.MONGO_URL);
 
