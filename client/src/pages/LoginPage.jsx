@@ -136,15 +136,15 @@ export default function LoginPage() {
     </div>
    
     <div className= "hidden lg:flex flex-col right-box">
-      <div className='flex flex-col -ml-96 gap-3'>
-        <div className='text-3xl font-black'>Welcome to</div>
-        <div>
-          <img src="../src/assets/logo.png" alt="" className="w-48"/>
-        </div>
+      <div className='flex flex-row -ml-96 gap-3'>
+        <div className='text-3xl font-black'>Welcome to EventHub BMSIT&M</div>
+        {/* <div className=''>
+          <img src="logo.png" alt="" className="w-8"/>
+        </div> */}
       </div>
 
         <div className="-ml-48 w-80 mt-12">
-          <img src="../src/assets/signinpic.svg" alt="" className='w-full'/>
+          <img src="signinpic.svg" alt="" className='w-full'/>
         </div>   
         
     </div>
