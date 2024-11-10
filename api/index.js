@@ -27,7 +27,7 @@ app.use(cookieParser());
 // const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:5173',  // Use your frontend's exact origin
+  origin: 'https://eventhub1.netlify.app',  // Use your frontend's exact origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true, // Enable this if you're using cookies or need credentials
 }));
@@ -39,7 +39,7 @@ app.use(cors({
 // const mongoose = require('mongoose');
 // console.log('Mongo URI:', process.env.MONGO_URI);
 
-const uri = process.env.MONGO_URI; // Ensure MONGO_URI is correct in your environment variables
+const uri = process.env.MONGO_URL; // Ensure MONGO_URI is correct in your environment variables
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
