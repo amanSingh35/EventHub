@@ -42,11 +42,11 @@ Introducing our Event Management System, a solution developed as part of our fin
 7. Start the Client:<br>
       **ems/client:** npm run dev
 
-**The application should now be running. You can access it at http://localhost:5173**<br>
-**The Server is running on http://localhost:4000**
-![Screenshot (150)](https://github.com/user-attachments/assets/dc92511d-d444-4b6e-ae13-17b0c01e5305)
-![Screenshot (151)](https://github.com/user-attachments/assets/b8de710c-201b-407d-ac3d-0b437f3a3377)
-![Screenshot (152)](https://github.com/user-attachments/assets/a61908cb-7d10-4583-aac1-fcfb44ed3de3)
-![Screenshot (154)](https://github.com/user-attachments/assets/a61908cb-7d10-4583-aac1-fcfb44ed3de3)
+
+**Check out the live website on https://eventhub1.netlify.app/**
+![Home Page](./client/public/Screenshot%20(150).png)
+![Events](./client/public/Screenshot%20(151).png)
+![Login/SignUp](./client/public/Screenshot%20(154).png)
+
 
 <h1>Thank You</h1>
