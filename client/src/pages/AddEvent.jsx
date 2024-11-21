@@ -1,9 +1,11 @@
 import  { useContext, useState } from 'react';
 import axios from 'axios';
 import { UserContext } from '../UserContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function AddEvent() {
   const {user} = useContext(UserContext);
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
 
     owner: user? user.name : "",
@@ -39,7 +41,7 @@ export default function AddEvent() {
       .post("/createEvent", formData)
       .then((response) => {
         console.log("Event posted successfully:", response.data);
-        
+        navigate('/');
       })
       .catch((error) => {
         console.error("Error posting event:", error);
