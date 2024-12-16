@@ -18,7 +18,7 @@ import PaymentSummary from './pages/PaymentSummary'
 import TicketPage from './pages/TicketPage'
 import CreatEvent from './pages/CreateEvent'
 
-axios.defaults.baseURL = 'https://eventhub-backend-14dq.onrender.com';
+axios.defaults.baseURL = 'http://ec2-15-207-58-149.ap-south-1.compute.amazonaws.com:3000';
 axios.defaults.withCredentials=true;
 
 function App() {
