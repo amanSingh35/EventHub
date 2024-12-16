@@ -27,10 +27,11 @@ app.use(cookieParser());
 // const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://eventhub1.netlify.app',  // Use your frontend's exact origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // Enable this if you're using cookies or need credentials
-}));
+   origin: ['https://eventhub1.netlify.app', 'http://localhost:5173'],  // Allow both origins
+   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+   credentials: true,  // Enable this if you're using cookies or need credentials
+ }));
+ 
 
  
 
